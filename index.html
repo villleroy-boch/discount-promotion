@@ -124,6 +124,7 @@ h1{
   if (!yesBtn || !noBtn) return;
 
   yesBtn.addEventListener("click", () => {
+    yesBtn.style.transform = "scale(1)";
     document.body.style.backgroundImage =
       'linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("02.jpg")';
     if (result) result.style.display = "block";
